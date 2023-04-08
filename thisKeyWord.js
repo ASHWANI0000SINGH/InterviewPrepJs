@@ -12,33 +12,33 @@
 
 
 // When we have 2 nested arr
-// const person1 = {
-//   age: 26,
-//   greet() {
-//     console.log(this.age);
-//     console.log(this);
+const person1 = {
+  age: 26,
+  greet() {
+    console.log(this.age);
+    console.log(this);
 
-//     function insideGreet() {
-//       console.log(this.age);
-//       console.log(this);
-//     }
-//     insideGreet();
-//   },
-// };
-// person1.greet();
+    function insideGreet() {
+      console.log(this.age);
+      console.log(this);
+    }
+    insideGreet();
+  },
+};
+person1.greet();
 
-// const person2 = {
-//   age: 25,
-//   greet:()=> {
-//     console.log(this.age);
+const person2 = {
+  age: 25,
+  greet:()=> {
+    console.log(this.age);
 
-//     const insideGreet=()=> {
-//       console.log(this);
-//     }
-//     insideGreet();
-//   },
-// };
-// person2.greet();
+    const insideGreet=()=> {
+      console.log(this);
+    }
+    insideGreet();
+  },
+};
+person2.greet();
 
 const person3 = {
   age: 25,
