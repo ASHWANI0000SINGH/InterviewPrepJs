@@ -3,6 +3,19 @@
 // 3. Bind- It returns the function when we bind the onj with the function
 // and we can invoke the function wherever we want.
 
+// call
+// As we know in js all functions are considered as object method
+// so we can bind particular function with any object 
+// so that the this value will be that object
+
+// apply
+// apply is same just need to pass the argumnets in array
+
+// bind
+// bind method is used to bind the current function with the obj and then we can keep that in other variavle 
+// and we can use it
+
+
 function about(age,hobby){
     console.log (`${this.name} is a ${this.profession} and he is ${age} years old and he likes playing ${hobby}`)
 }

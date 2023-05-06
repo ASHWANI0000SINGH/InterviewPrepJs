@@ -1,12 +1,18 @@
 // 1. Proto is basically the property where one class is linked with the other class
 // or we can also say that it can be used to inherit property of ancesstor class
-// eg when we use any array property , we use any method is basically with the help of proto we can access its property
+// eg when we use any array property , we have so many array method which is basically
+//  with the help of proto we can access its property
 
 //2. Prototype is same as proto
 
 //3. Prototypal chain is basically the chain of classes which are linked by the help of proto
 
 //4. Prototypal inheritence is basically how we can use methods of ancesstor class 
+// 1. In JAvascript we have a keyword "__proto__ or [[prototype]]" linked with the object or classes.
+// 2. Either its linked to null or refrences with another object.
+// 3. So protypal inheryance is basically when we try to acces proprties of child class which is not there 
+// 4. then we will look into the ancensotr class or parent class 
+// 5. which is called as protypal inheritance
 
 //Using Class
 class Animal {
@@ -61,3 +67,16 @@ Object.setPrototypeOf(cat, dog) // allows the cat object to access the propertie
 console.log(cat.hasOwnProperty('prototype')) // returns false
 
 console.log(cat.breed) // returns 7
+
+
+
+
+// using objects 
+const animals={
+  eat:true
+}
+const rabbit={
+  walk:true
+}
+rabbit.__proto__=animals
+console.log(rabbit.eat);
