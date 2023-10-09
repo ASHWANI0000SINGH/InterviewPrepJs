@@ -74,6 +74,7 @@ console.log(cat.breed) // returns 7
 // using objects 
 const animals={
   eat:true
+  
 }
 const rabbit={
   walk:true
